@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1" data-title="Saint-Gobain Mobile Transport Requests">
+            <div data-role="header" id="listview-title">
+                <h1>SG-Mobile Transp.Requests</h1>
+                <a data-role="button" id="listview-about"
+                data-rel="dialog" data-transition="pop" data-icon="info" data-mini="true" data-shadow="false">About</a>
+                <a data-role="button" class="ui-btn-active ui-btn-right" id="listview-refresh" data-rel="page"
+                data-transition="pop" data-icon="info" data-mini="true">Refresh</a>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" id="listview-data" data-inset="false" data-filter-placeholder="Search Requests">
+                    <li data-role="list-divider" id="listview-data-divider">Business Unit System</li>
+                    <li id="listview-item1">
+                        <a>Glass E2000<span class="ui-li-count">9</span></a>
+                    </li>
+                    <li id="listview-item1">
+                        <a>GlassSolution<span class="ui-li-count">9</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>
